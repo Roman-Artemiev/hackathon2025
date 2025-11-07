@@ -5,6 +5,7 @@ import ChatHeading from "./ChatHeading";
 import ChatSubHeading from "./ChatSubHeading";
 import AuthorType from "@/structures/AuthorType";
 import PromptBar from "../prompt/prompt-bar";
+import type GridItem from "@/structures/GridItem";
 
 
 
@@ -12,7 +13,7 @@ import PromptBar from "../prompt/prompt-bar";
 
 export default function Chat() {
 
-  const gridItems = [
+  const [gridItems, setGridItems] = useState<GridItem[]>( [
     {
       text: "Bot",
       author: 0,
@@ -25,10 +26,8 @@ export default function Chat() {
       text: "Bot",
       author: 0,
     }
-  ];
+  ])
 
-
-  const [userPrompt, setUserPrompt] = useState<string>();
 
   return (
     <>
@@ -41,8 +40,6 @@ export default function Chat() {
         <ChatGrid gridItems={gridItems ?? []} />
 
         {/* <ChatQuickResponses  /> */}
-
-        <InputChatBlock text={userPrompt} color="" textSetter={setUserPrompt} />
 
         <div className='rounded-2xl mx-auto max-w-4xl'>
           <PromptBar />

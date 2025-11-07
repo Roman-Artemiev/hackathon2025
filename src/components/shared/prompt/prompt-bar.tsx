@@ -1,5 +1,11 @@
 import { Button, FormInput } from '@/components/ui'
+import type GridItem from '@/structures/GridItem';
 import { FormProvider, useForm } from 'react-hook-form';
+
+interface PromptBarProps{
+  setGridItems : (gridItems : GridItem[]) => (void)
+}
+
 
 export default function PromptBar() {
   const formMethods = useForm({
