@@ -1,0 +1,30 @@
+[
+  {
+    "id": "q1",
+    "field": "location",
+    "question": "Kde se počítač nachází?",
+    "type": "text",
+    "options": []
+  },
+  {
+    "id": "q2",
+    "field": "asset_identifier",
+    "question": "Jaký konkrétní počítač se má opravit (např. inventární číslo, jméno počítače, sériové číslo)?",
+    "type": "text",
+    "options": []
+  },
+  {
+    "id": "q3",
+    "field": "problem_details",
+    "question": "Jaký je problém s počítačem? (Popište co nejpřesněji)",
+    "type": "text",
+    "options": []
+  },
+  {
+    "id": "q4",
+    "field": "urgency",
+    "question": "Jak je oprava naléhavá?",
+    "type": "radio",
+    "options": ["Nízká", "Střední", "Vysoká", "Kritická"]
+  }
+]
