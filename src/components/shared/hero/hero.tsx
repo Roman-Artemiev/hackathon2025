@@ -1,7 +1,9 @@
-import React from 'react'
+import Logo from '/images/logo.png';
 
 export default function Hero() {
   return (
-    <div>hero</div>
+    <div className=''>
+      <img src={Logo} alt="Logo" />
+    </div>
   )
 }
