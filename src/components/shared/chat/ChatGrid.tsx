@@ -4,8 +4,6 @@ interface IChatGrid {
     gridItems: GridItem[];
 }
 
-
-
 export default function ChatGrid({ gridItems }: IChatGrid) {
     return (
         <div className="grid-cols-2 grid gap-1">
