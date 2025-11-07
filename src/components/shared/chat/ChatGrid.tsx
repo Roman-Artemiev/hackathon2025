@@ -19,13 +19,6 @@ export default function ChatGrid({gridItems} : IChatGrid){
                     {item.text}
                 </div>    
                 </>}
-                </>  
-                ))
-            }
-
-            {
-                gridItems?.map((item)=>(
-                <>
                 {item.author == 1 && <>
                 <div className="col-span-2 col-start-2 col-end-3 self-end content-end">
                     {item.text}
@@ -34,6 +27,8 @@ export default function ChatGrid({gridItems} : IChatGrid){
                 </>  
                 ))
             }
+
+            
             
         </div>
         </>

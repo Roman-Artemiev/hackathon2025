@@ -24,7 +24,7 @@ export default function PromptBar({setGridItems, gridItems} : PromptBarProps) {
     // Create a new GridItem from the submitted text (adjust as needed)
     const newItem: GridItem = {
       // Fill in the required properties for GridItem here
-      author : 0,
+      author : 1,
       text: data.text,
     };
     setGridItems([...gridItems, newItem]);
