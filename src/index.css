@@ -6,6 +6,9 @@
 
 body {
   font-family: 'Montserrat' sans-serif;
+  /* background: linear-gradient(to bottom, #FFEFD5, #FFDAB9) no-repeat fixed; */
+  background:  linear-gradient(to bottom, #FFFDF5, #FFEFD5) no-repeat fixed;
+
 }
 
 :root {
@@ -15,7 +18,6 @@ body {
 
   color-scheme: light dark;
   color: rgba(255, 255, 255, 0.87);
-  background-color: #242424;
 
   font-synthesis: none;
   text-rendering: optimizeLegibility;
