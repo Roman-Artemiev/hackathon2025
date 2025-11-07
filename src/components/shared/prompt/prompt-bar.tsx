@@ -17,7 +17,7 @@ export default function PromptBar({setGridItems, gridItems} : PromptBarProps) {
   });
 
   const {
-    handleSubmit,
+    handleSubmit, setValue
   } = formMethods;
 
   const onSubmit = async (data: { text: string }) => {
@@ -28,6 +28,7 @@ export default function PromptBar({setGridItems, gridItems} : PromptBarProps) {
       text: data.text,
     };
     setGridItems([...gridItems, newItem]);
+    setValue("text", "");
   }
 
   return (
