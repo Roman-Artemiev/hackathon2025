@@ -3,7 +3,7 @@ import Hero from '../shared/hero/hero'
 
 export default function Home() {
   return (
-    <div>
+    <div className='px-10'>
       <Hero />
       <Chat />
     </div>
