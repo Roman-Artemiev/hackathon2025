@@ -42,7 +42,7 @@ export default function Chat() {
         {/* <ChatQuickResponses  /> */}
 
         <div className='rounded-2xl mx-auto max-w-4xl'>
-          <PromptBar />
+          <PromptBar setGridItems={setGridItems} gridItems={gridItems}  />
         </div>
       </div>
 

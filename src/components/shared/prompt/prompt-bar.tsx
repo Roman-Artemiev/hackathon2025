@@ -4,10 +4,11 @@ import { FormProvider, useForm } from 'react-hook-form';
 
 interface PromptBarProps{
   setGridItems : (gridItems : GridItem[]) => (void)
+  gridItems : GridItem[]
 }
 
 
-export default function PromptBar() {
+export default function PromptBar({setGridItems, gridItems} : PromptBarProps) {
   const formMethods = useForm({
     mode: "onChange",
     defaultValues: {
@@ -19,8 +20,14 @@ export default function PromptBar() {
     handleSubmit,
   } = formMethods;
 
-  const onSubmit = async () => {
-
+  const onSubmit = async (data: { text: string }) => {
+    // Create a new GridItem from the submitted text (adjust as needed)
+    const newItem: GridItem = {
+      // Fill in the required properties for GridItem here
+      author : 0,
+      text: data.text,
+    };
+    setGridItems([...gridItems, newItem]);
   }
 
   return (

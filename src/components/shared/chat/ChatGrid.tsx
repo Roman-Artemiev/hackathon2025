@@ -10,16 +10,7 @@ export default function ChatGrid({gridItems} : IChatGrid){
     return(
         <>
         <div className="grid-cols-2 grid">
-            {/* <div className="">
-            {
-                gridItems?.map((item)=>(
-                <>
-                {item.author == 0 && <>
-                    {item.text}
-                </>}
-                </>  
-                ))
-            } */}
+
             {
                 gridItems?.map((item)=>(
                 <>
