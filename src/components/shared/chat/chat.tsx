@@ -40,7 +40,7 @@ export default function Chat() {
       <ChatHeading headningText="Zdravim" />
 
       <div className="space-y-1 p-4 rounded-2xl bg-white mb-6 max-h-96 h-96 overflow-auto scrollbar" ref={chatContainerRef}>
-        <ChatSubHeading text="Podtext " />
+        <ChatSubHeading text="Ahoj! Jsem tvůj asistent pro bezpečnost práce. Můžeš stručně říct, čím se zabýváš?" />
 
         <ChatGrid gridItems={gridItems ?? []} />
       </div>
